@@ -37,8 +37,8 @@
 	--primary-new:#ff7025;
 	--primary:#ff7025;
 	--primary-light: #f8b639;
-	--primary-dark:#ff4c00;
-	--grey-1: #e0e5ec;
+	--primary-dark:white;
+	
 	--grey-2:#c3c1c6;
 	--grey-3:#b1b1b1;
 	--grey-4:#9baacf;
@@ -960,7 +960,7 @@ section
 {
 	width: 100%;
 	height: 100%;
-background-image: url("../images/counterbg1.png");
+	background-image: url("https://wallpaperaccess.com/full/3239480.jpg");
 background-size: contain;
 background-repeat: no-repeat;
 }
@@ -982,7 +982,7 @@ background-repeat: no-repeat;
 .home_slider_subtitle
 {
 	font-size: 24px;
-	color: var(--secondary-color);
+	color: white;
 	margin-top: 9px;
 }
 
@@ -996,6 +996,10 @@ background-repeat: no-repeat;
 	justify-content: center;
 	padding: 20px;
 	flex-wrap: wrap;
+	background-size: cover;
+	background-image: url("https://c8.alamy.com/comp/2B6Y2PE/abstract-yellow-technology-background-binary-computer-code-programming-coding-hacker-concept-2B6Y2PE.jpg");
+	
+	background-attachment: fixed;
   }
   
   .card {
@@ -1087,6 +1091,13 @@ background-repeat: no-repeat;
   .options__wishlist.active .icon {
 	color: #ff0000;
   }
+  .twelve{
+	background-color: #f8b639;
+  }
+  .card card-course{
+	background-color: #ffb600;
+  }
+ 
   
 /* Register Now Form */
 
@@ -1506,12 +1517,16 @@ background-repeat: no-repeat;
 {
 	width: 100%;
 	z-index: 2;
-	background-image:url(../images/counterbg2.png) ;
+	background-image:url(https://wallpaperaccess.com/full/1526011.jpg) ;
 	background-position: center;
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
+.counter_text{
+	color: #bfbfbe;
+}
 .counter_content
 {
 	padding-top: 119px;
@@ -1633,205 +1648,96 @@ background-repeat: no-repeat;
 14. Footer
 *********************************/
 
-.footer
-{
-	display: block;
+
+
+
+
+.footer {
 	position: relative;
-	width: 100%;
-	background: #1e2434;
-	padding-top: 94px;
+	background: #333;
+	color: white;
+	padding: 0px 20px 20px;
+	font-size: 16px;
+	height: 50v;
 }
-.footer_background
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
+
+
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: auto;
 }
-.footer_content
-{
-	padding-bottom: 53px;
+
+.footer-column {
+	flex: 1;
+	min-width: 200px;
+	
 }
-.footer_logo_text
-{
-	font-size: 36px;
-	font-weight: 700;
-	line-height: 0.75;
-	color: #FFFFFF;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.footer_logo_text span
-{
-	color: #14bdee;
-}
-.footer_title
-{
+
+.footer h3 {
+	margin-bottom: 15px;
 	font-size: 18px;
-	font-weight: 700;
-	color: #FFFFFF;
-	line-height: 0.75;
-}
-.footer_logo_container
-{
-	margin-top: -14px;
-}
-.footer_about_text
-{
-	margin-top: 31px;
-}
-.footer_about_text p
-{
-	color: #FFFFFF;
-}
-.footer_social
-{
-	margin-top: 23px;
-}
-.footer_social ul li
-{
+	border-bottom: 2px solid #fff;
 	display: inline-block;
-	width: 45px;
-	height: 45px;
-	background: #4b505d;
-	border-radius: 50%;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
+	padding-bottom: 5px;
 }
-.footer_social ul li:not(:last-child)
-{
-	margin-right: 6px;
+
+.footer ul {
+	list-style: none;
+	padding: 0;
 }
-.footer_social ul li a
-{
-	display: block;
-	position: relative;
+
+.footer ul li {
+	margin: 8px 0;
+}
+
+.footer ul li a {
+	color: white;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.footer ul li a:hover {
+	text-decoration: underline;
+}
+
+.social-icons {
+	margin-top: 15px;
+}
+
+.social-icons a {
+	color: white;
+	margin-right: 10px;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.footer-bottom {
 	text-align: center;
+	margin-top: 20px;
+	border-top: 1px solid #fff;
+	padding-top: 10px;
 }
-.footer_social ul li a i
-{
-	color: #FFFFFF;
-	line-height: 45px;
+.logo{
+	width: 300px;
+	position: relative;
+	z-index: 99;
+	bottom: 60px;
+	
 }
-.footer_social ul li:hover
-{
-	background: #14bdee;
+.social-img{
+	width: 60px;
+	height: 60px;
 }
-.footer_contact
-{
-	padding-left: 36px;
+.social-link{
+	width: 60px;
+	height: 60px;
 }
-.footer_contact_info
-{
-	margin-top: 33px;
-}
-.footer_contact_info ul li
-{
-	font-size: 14px;
-	font-weight: 400;
-	color: #b5b8be;
-}
-.footer_contact_info ul li:not(:last-child)
-{
-	margin-bottom: 15px;
-}
-.footer_links
-{
-	padding-left: 80px;
-}
-.footer_links_container ul
-{
-	columns: 2;
-	-webkit-columns: 2;
-	-moz-columns: 2;
-}
-.footer_links_container
-{
-	margin-top: 33px;
-}
-.footer_links_container ul li a
-{
-	font-size: 14px;
-	color: #b5b8be;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.footer_links_container ul li:not(:last-child)
-{
-	margin-bottom: 15px;
-}
-.footer_links_container ul li a:hover
-{
-	color: #14bdee;
-}
-.footer_mobile
-{
-	display: inline-block;
-	float: right;
-}
-.footer_mobile_content
-{
-	padding-top: 35px;
-}
-.footer_image:not(:last-child)
-{
-	margin-bottom: 10px;
-}
-.copyright
-{
-	height: 54px;
-	border-top: solid 1px #353a49;
-}
-.cr_list li
-{
-	display: inline-block;
-}
-.copyright div
-{
-	font-size: 14px;
-	color: #b5b8be;
-}
-.cr_text a
-{
-	color: #FFFFFF;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.cr_text a:hover
-{
-	color: #14bdee;
-}
-.cr_list li:not(:last-child)
-{
-	margin-right: 50px;
-}
-.cr_list li a
-{
-	font-size: 14px;
-	color: #b5b8be;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.cr_list li a:hover
-{
-	color: #14bdee;
+.small{
+	height: 30px;
+	width: 30px;
+	
 }
