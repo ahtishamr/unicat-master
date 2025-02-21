@@ -13,7 +13,7 @@
 {
 	width: 100%;
 	height: 100%;
-background-image: url("../images/counterbg1.png");
+background-image: url("../images/counterbg2.png");
 background-size: contain;
 background-repeat: no-repeat;
 }
@@ -48,7 +48,10 @@ background-repeat: no-repeat;
 	justify-content: center;
 	padding: 20px;
 	flex-wrap: wrap;
-	background-image: url("https://cdn.wallpapersafari.com/98/65/HtAGJ4.gif");
+	
+  }
+  .twelve{
+	margin-top: 65px;
   }
   
   .card {
@@ -86,35 +89,54 @@ background-repeat: no-repeat;
 	background-color: var(--primary-light);
 	height: 180px;
   }
-  .course-wrapper {
-	display: flex;
-	gap: 20px;
-	justify-content: center;
-	padding: 20px;
-	flex-wrap: wrap;
-	background-size: cover;
-	background-attachment: fixed;
-	background-image: url("https://static.vecteezy.com/system/resources/previews/022/403/673/large_2x/programming-code-abstract-technology-background-of-software-developer-and-computer-ai-generated-free-photo.jpeg");
-  }
-  .card img {
-	height: 200px;
-	object-fit: cover;
-}
-.card {
+  .banner {
+	width: 90%;
+	/* max-width: 800px; */
+	height: 270px;
+	margin: auto;
+	text-align: left;
+	padding: 40px 20px;
 	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	background: #f3c769;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	top: 65px;
+	margin-top: 20px;
+	z-index: 1;
 	overflow: hidden;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	transition: transform 1s ease-in-out; /* Zoom effect for the whole banner */
+	
 }
-.neon-button {
-	background-color: #007bff;
-	color: white;
-	border: none;
-	padding: 10px 15px;
-	border-radius: 5px;
-	transition: 0.3s ease-in-out;
-	width: 100%;
+
+.banner img {
+	width: 300px; /* Set image size to 300px */
+	height: auto;
+	border-radius: 10px;
+	position: absolute;
+	right: 20px;
+	transition: transform 1s ease-in-out;
+}
+
+.banner-content {
+	max-width: 70%;
+	padding-left: 10px;
+	line-height: 7px;
+}
+
+.banner-content h3 {
+	color: black;
 	font-weight: bold;
 }
-.neon-button:hover {
-	background-color: #0056b3;
+
+.banner-content p {
+	color: #444;
+	opacity: 1; /* No transition, just static text */
+}
+
+.highlight {
+	color: red;
+	font-weight: bold;
 }
