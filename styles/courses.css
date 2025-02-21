@@ -1,0 +1,120 @@
+.home
+{
+	width: 100%;
+	height: 150vh;
+	
+}
+.home_slider_container
+{
+	width: 100%;
+	height: 100%;
+}
+.home_slider
+{
+	width: 100%;
+	height: 100%;
+background-image: url("../images/counterbg1.png");
+background-size: contain;
+background-repeat: no-repeat;
+}
+.home_slider_content
+{
+	position: absolute;
+	top: 41%;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+.home_slider_title
+{
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 1.2;
+	color: var(--primary-dark);
+}
+.home_slider_subtitle
+{
+	font-size: 24px;
+	color: var(--secondary-color);
+	margin-top: 9px;
+}
+
+
+
+
+.card-wrapper {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	padding: 20px;
+	flex-wrap: wrap;
+	background-image: url("https://cdn.wallpapersafari.com/98/65/HtAGJ4.gif");
+  }
+  
+  .card {
+	width: 230px;
+	background-color: var(--grey-1) ;
+	box-shadow: 5px 4px 12px var(--primary) inset;
+	border-radius: 8px;
+	overflow: hidden;
+	margin-left: 10px;
+	position: relative;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	margin: 10px;
+	text-shadow:  3px 4px var(--primary-light);
+  }
+  
+  .card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 20px var(--primary-light);
+  }
+  
+  .card__image img {
+	width: 100%;
+	height: 130px;
+	object-fit: cover;
+	border-bottom: 3px solid #f4f4f4;
+  }
+  .card-course{
+	width: 25%;
+  }
+  .card__details {
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: var(--primary-light);
+	height: 180px;
+  }
+  .course-wrapper {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	padding: 20px;
+	flex-wrap: wrap;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url("https://static.vecteezy.com/system/resources/previews/022/403/673/large_2x/programming-code-abstract-technology-background-of-software-developer-and-computer-ai-generated-free-photo.jpeg");
+  }
+  .card img {
+	height: 200px;
+	object-fit: cover;
+}
+.card {
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.neon-button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 5px;
+	transition: 0.3s ease-in-out;
+	width: 100%;
+	font-weight: bold;
+}
+.neon-button:hover {
+	background-color: #0056b3;
+}
