@@ -11,6 +11,8 @@
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 </head>
@@ -37,10 +39,10 @@
 							</div>
 							<nav class="main_nav_contaner ml-auto">
 								<div class="container">
-									<button class="btn btn-success success show-tooltip">Home</button>
+									<button class="btn btn-success success show-tooltip"><a href=""></a>Home</button>
 									<button class="btn btn-info info"><a href="./courses.html">Courses</a></button>
 									<button class="btn btn-warning text-white warning"><a href="./doctor.html">About</a></button>
-									<button class="btn btn-danger danger">Contact Us</button>
+									<button class="btn btn-danger danger"><a href="./doctor.html">Contact us</a></button>
 									</div>
 								
 								<!-- Hamburger -->
@@ -73,11 +75,11 @@
 	<nav class="menu_nav">
 		<ul class="menu_mm">
 			<li class="menu_mm"><a href="index.html">Home</a></li>
-			<li class="menu_mm"><a href="./doctor.html">About</a></li>
+			<li class="menu_mm"><a href="">About</a></li>
 			<li class="menu_mm"><a href="#">Courses</a></li>
 			<li class="menu_mm"><a href="#">Blog</a></li>
 			<li class="menu_mm"><a href="#">Page</a></li>
-			<li class="menu_mm"><a href="contact.html">Contact</a></li>
+			<li class="menu_mm"><a href="./doctor.html">Contact</a></li>
 		</ul>
 	</nav>
 </div>
@@ -95,10 +97,16 @@
 					<div class="container">
 						<div class="row">
 							<div class="col text-center p-5 card slider-card">
-								<div class="home_slider_title">Become a Full-Stack Developer!</div>
-								<div class="home_slider_subtitle">Master both front-end and back-end with one course.</div>
-								<div class="home_slider_form_container">
+								<div class="home_slider_title" data-aos="fade-down" data-aos-duration="1000">
+									Become a Full-Stack Developer!
+								</div>
+								<div class="home_slider_subtitle" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+									Master both front-end and back-end with one course.
+								</div>
+								<div class="home_slider_form_container" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">
 									<button class="neon-button">Start Your Full-Stack Journey</button>
+								</div>
+								
 								</div>
 							</div>
 						</div>
@@ -149,127 +157,131 @@
 	<h1 class=" m-5 emboss ">Popular Courses</h1>
 </div>
 <div class="card-wrapper">
-	
+
     <!-- Frontend Development Card -->
-    <div class="card card-course ">
-      <a href="#">
-        <div class="card__image">
-          <img src="./images/frontend.jpg" alt="Frontend Development Course">
-        </div>
-        <div class="card__details">
-          <h4 class="emboss">Frontend Development</h4>
-          <div class="details__description">
-            Learn the latest frontend technologies such as HTML, CSS, JavaScript, and more.
-          </div>
-          <div class="details__bottom">
-            <div class="details__price">
-              <h4 class="emboss">PKR30000</h4>  
-              <span class="price--old">PKR45000</span>
+    <div class="card card-course" data-aos="fade-up" data-aos-duration="1000">
+        <a href="#">
+            <div class="card__image" data-aos="zoom-in" data-aos-delay="200">
+                <img src="./images/frontend.jpg" alt="Frontend Development Course">
             </div>
-          </div>
+            <div class="card__details" data-aos="fade-right" data-aos-delay="300">
+                <h4 class="emboss">Frontend Development</h4>
+                <div class="details__description">
+                    Learn the latest frontend technologies such as HTML, CSS, JavaScript, and more.
+                </div>
+                <div class="details__bottom">
+                    <div class="details__price">
+                        <h4 class="emboss">PKR30000</h4>  
+                        <span class="price--old">PKR45000</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="card__options" data-aos="fade-left" data-aos-delay="400">
+            <div class="options__wishlist">
+                <i class="icon fa fa-heart"></i>
+            </div>
         </div>
-      </a>
-      <div class="card__options">
-        <div class="options__wishlist">
-          <i class="icon fa fa-heart"></i>
-        </div>
-      </div>
-      <button class="neon-button">Enroll Now</button>
+        <button class="neon-button" data-aos="zoom-in" data-aos-delay="500">Enroll Now</button>
     </div>
 
     <!-- Backend Development Card -->
-    <div class="card card-course">
-      <a href="#">
-        <div class="card__image">
-          <img src="./images/php.jpg" alt="Backend Development Course">
-        </div>
-        <div class="card__details">
-          <h4 class="emboss">Backend Development</h4>
-          <div class="details__description">
-            Master server-side technologies like PHP, MySQL, and API development.
-          </div>
-          <div class="details__bottom">
-            <div class="details__price">
-              <h4 class="emboss">PKR30000</h4>
-              <span class="price--old">PKR45000</span>
+    <div class="card card-course" data-aos="fade-up" data-aos-duration="1000">
+        <a href="#">
+            <div class="card__image" data-aos="zoom-in" data-aos-delay="200">
+                <img src="./images/php.jpg" alt="Backend Development Course">
             </div>
-          </div>
+            <div class="card__details" data-aos="fade-right" data-aos-delay="300">
+                <h4 class="emboss">Backend Development</h4>
+                <div class="details__description">
+                    Master server-side technologies like PHP, MySQL, and API development.
+                </div>
+                <div class="details__bottom">
+                    <div class="details__price">
+                        <h4 class="emboss">PKR30000</h4>
+                        <span class="price--old">PKR45000</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="card__options" data-aos="fade-left" data-aos-delay="400">
+            <div class="options__wishlist">
+                <i class="icon fa fa-heart"></i>
+            </div>
         </div>
-      </a>
-      <div class="card__options">
-        <div class="options__wishlist">
-          <i class="icon fa fa-heart"></i>
-        </div>
-      </div>
-      <button class="neon-button">Enroll Now</button>
+        <button class="neon-button" data-aos="zoom-in" data-aos-delay="500">Enroll Now</button>
     </div>
 
     <!-- Full Stack Development Card -->
-    <div class="card card-course">
-      <a href="#">
-        <div class="card__image">
-          <img src="./images/laravel2.jpg" alt="Full Stack Development Course">
-        </div>
-        <div class="card__details">
-          <h4 class="emboss">Full Stack Development</h4>
-          <div class="details__description">
-            Become a Full Stack developer using React.js, Laravel, and other powerful tools.
-          </div>
-          <div class="details__bottom">
-            <div class="details__price">
-              <h4 class="emboss">PKR50000</h4>
-              <span class="price--old">PKR60000</span>
+    <div class="card card-course" data-aos="fade-up" data-aos-duration="1000">
+        <a href="#">
+            <div class="card__image" data-aos="zoom-in" data-aos-delay="200">
+                <img src="./images/laravel2.jpg" alt="Full Stack Development Course">
             </div>
-          </div>
+            <div class="card__details" data-aos="fade-right" data-aos-delay="300">
+                <h4 class="emboss">Full Stack Development</h4>
+                <div class="details__description">
+                    Become a Full Stack developer using React.js, Laravel, and other powerful tools.
+                </div>
+                <div class="details__bottom">
+                    <div class="details__price">
+                        <h4 class="emboss">PKR50000</h4>
+                        <span class="price--old">PKR60000</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="card__options" data-aos="fade-left" data-aos-delay="400">
+            <div class="options__wishlist">
+                <i class="icon fa fa-heart"></i>
+            </div>
         </div>
-      </a>
-      <div class="card__options">
-        <div class="options__wishlist">
-          <i class="icon fa fa-heart"></i>
-        </div>
-      </div>
-      <button class="neon-button">Enroll Now</button>
+        <button class="neon-button" data-aos="zoom-in" data-aos-delay="500">Enroll Now</button>
     </div>
 
     <!-- WordPress Development Card -->
-    <div class="card card-course">
-      <a href="#">
-        <div class="card__image">
-          <img src="https://kinsta.com/wp-content/uploads/2018/01/wordpress-lms-plugins-1.png" alt="WordPress Development Course">
-        </div>
-        <div class="card__details">
-          <strong class="details__name">WordPress Development</strong>
-          <div class="details__description">
-            Learn to build beautiful websites and blogs using WordPress.
-          </div>
-          <div class="details__bottom">
-            <div class="details__price">
-              <span class="price">PKR 15000</span>
-              <span class="price--old">PKR 20000</span>
+    <div class="card card-course" data-aos="fade-up" data-aos-duration="1000">
+        <a href="#">
+            <div class="card__image" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://kinsta.com/wp-content/uploads/2018/01/wordpress-lms-plugins-1.png" alt="WordPress Development Course">
             </div>
-          </div>
+            <div class="card__details" data-aos="fade-right" data-aos-delay="300">
+                <h4 class="emboss">WordPress Development</h4>
+                <div class="details__description">
+                    Learn to build beautiful websites and blogs using WordPress.
+                </div>
+                <div class="details__bottom">
+                    <div class="details__price">
+                        <span class="price">PKR 15000</span>
+                        <span class="price--old">PKR 20000</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="card__options" data-aos="fade-left" data-aos-delay="400">
+            <div class="options__wishlist">
+                <i class="icon fa fa-heart"></i>
+            </div>
         </div>
-      </a>
-      <div class="card__options">
-        <div class="options__wishlist">
-          <i class="icon fa fa-heart"></i>
-        </div>
-      </div>
-      <button class="neon-button">Enroll Now</button>
+        <button class="neon-button" data-aos="zoom-in" data-aos-delay="500">Enroll Now</button>
     </div>
-  </div>
+
+</div>
+
   
 <br><br>
 
-  <div class="twelve-1 d-flex flex-column justify-content-center align-items-center">
-	<button class="neon-button shadow--sunken mx-auto">View All Courses</button><br>
-	<h1 class=" m-5 emboss">All Teachers</h1>
+<div class="twelve-1 d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
+	<button class="neon-button shadow--sunken mx-auto" data-aos="zoom-in" data-aos-delay="300">View All Courses</button>
+	<br>
+	<h1 class="m-5 emboss" data-aos="fade-down" data-aos-delay="500">All Teachers</h1>
 </div>
+
 	<!-- Team -->
-	<div class="team container d-flex justify-content-center align-items-center flex-wrape">
-		
+	<div class="team container d-flex justify-content-center align-items-center flex-wrap">
+
 		<!-- Card 1 -->
-		<div class="card-profile card" id="card-1">
+		<div class="card-profile card" id="card-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
 			<div class="card__border">
 				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoIAQqhuDgSoKEyWwOWsjiPJjmBTekCjuMzQ&s" alt="card image" class="card__img_profile" />
 			</div>
@@ -297,7 +309,7 @@
 		</div>
 	
 		<!-- Card 2 -->
-		<div class="card-profile card" id="card-2">
+		<div class="card-profile card" id="card-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
 			<div class="card__border">
 				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoIAQqhuDgSoKEyWwOWsjiPJjmBTekCjuMzQ&s" alt="card image" class="card__img_profile" />
 			</div>
@@ -325,7 +337,7 @@
 		</div>
 	
 		<!-- Card 3 -->
-		<div class="card-profile card" id="card-3">
+		<div class="card-profile card" id="card-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
 			<div class="card__border">
 				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoIAQqhuDgSoKEyWwOWsjiPJjmBTekCjuMzQ&s" alt="card image" class="card__img_profile" />
 			</div>
@@ -351,7 +363,9 @@
 				</div>
 			</div>
 		</div>
+	
 	</div>
+	
 		<!-- Counter -->
 
 		<div class="counter mt-4">
@@ -359,27 +373,28 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6">
-						<div class="counter_content">
+						<div class="counter_content" data-aos="fade-right" data-aos-duration="1000">
 							<h2 class="emboss">Register Now</h2>
 							<h4 class="counter_title">Register Now for Our Frontend Course!</h4>
 							<div class="counter_text">
 								<p>Ready to master the essentials of frontend development? Our comprehensive frontend course will guide you through everything you need to know, from HTML and CSS basics to advanced JavaScript techniques.
-
+						
 									Don’t miss your chance to get hands-on experience building real-world projects!</p>
 							</div>
-		
+						
 							<div class="timer-container">
 								<div class="timer">
 									<h2 class="counter_title">Time Left: <span id="countdown" class="emboss"></span> </h2>
 								</div>
 							</div>
 						</div>
+						
 		
 					</div>
 				</div>
 		
 				<!-- Counter Form -->
-				<div class="counter_form emboss">
+				<div class="counter_form emboss" data-aos="fade-left" data-aos-duration="1000">
 					<div class="row fill_height">
 						<div class="col fill_height">
 							<form class="counter_form_content d-flex flex-column align-items-center justify-content-center" action="#">
@@ -395,16 +410,17 @@
 									<option>Database</option>
 									<option>Javascript</option>
 									<option>Wordpress</option>
-									<option>Full-Stack Developement</option>
+									<option>Full-Stack Development</option>
 									<option>Flutter</option>
-									<option>Seo</option>
+									<option>SEO</option>
 								</select>
 								<textarea class="counter_input counter_text_input" placeholder="Message:" required="required"></textarea>
-								<button type="submit"  class="neon-button w-100">Submit Now</button>
+								<button type="submit" class="neon-button w-100">Submit Now</button>
 							</form>
 						</div>
 					</div>
 				</div>
+				
 		
 			</div>
 		</div>
@@ -412,26 +428,26 @@
 	
 	<!-- Footer -->
 
-<footer class="footer">
+	<footer class="footer">
         <div class="logo">
 			<img src="./images/logo1.png" alt="">
 		</div>
 
         <div class="footer-container">
             <!-- Logo & Social Media -->
-            <div class="footer-column">
-             <p>"Code your dreams into reality—every bug you fix is a step closer to success! Keep learning, keep building!" 🚀💻</p>
-			 <div class="social-icons d-flex align-items-center">
-				<a href="#" class="social-link"><img src="./images/fb-removebg-preview (1).png" alt="" class="social-img"></a>
-				<a href="#" class="social-link"><img src="./images/what.png" alt="" class="social-img"></a>
-				<a href="#" class="social-link"><img src="./images/linked.png" alt="" class="social-img"></a>
-				<a href="#" class="social-link"><img src="./images/git.png" alt="" class="social-img"></a>
-			</div>
-			
+            <div class="footer-column" data-aos="fade-right">
+                <p>"Code your dreams into reality—every bug you fix is a step closer to success! Keep learning, keep building!" 🚀💻</p>
+                <div class="social-icons d-flex align-items-center">
+                    <a href="#" class="social-link"><img src="./images/fb-removebg-preview (1).png" alt="" class="social-img"></a>
+                    <a href="#" class="social-link"><img src="./images/what.png" alt="" class="social-img"></a>
+                    <a href="#" class="social-link"><img src="./images/linked.png" alt="" class="social-img"></a>
+                    <a href="#" class="social-link"><img src="./images/git.png" alt="" class="social-img"></a>
+                </div>
             </div>
+            
 
             <!-- Explore -->
-            <div class="footer-column">
+            <div class="footer-column" data-aos="fade-up">
                 <h3>Explore</h3>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -440,9 +456,8 @@
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
-
-            <!-- Services -->
-            <div class="footer-column">
+            
+            <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
                 <h3>Services</h3>
                 <ul>
                     <li><a href="#">Web Design</a></li>
@@ -451,20 +466,34 @@
                     <li><a href="#">Marketing</a></li>
                 </ul>
             </div>
+            
 
             <!-- Contact -->
-            <div class="footer-column">
+            <div class="footer-column" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
                 <h3>Contact</h3>
-                <ul class="">
-                    <li><img src="./images/email-removebg-preview.png" alt="" class="small mx-3 "> bilalbaqar5717@gmail.com</li>
-                    <li><img src="./images/203-2038341_phone-png-phone-icon-orange-png.png" alt="" class="small  mx-3"> 0307-7875533</li>
-                    <li><img src="./images/207-2072661_jpg-free-stock-location-clipart-office-address-orange-removebg-preview.png" alt="" class="small mx-3 "><span>Sadaqat assets,kirian wala,DHA <br class="br"> Phase 5,M-Block</span></p></li>
+                <ul data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
+                    <li>
+                        <img src="./images/email-removebg-preview.png" alt="" class="small mx-3">
+                        bilalbaqar5717@gmail.com
+                    </li>
+                    <li>
+                        <img src="./images/203-2038341_phone-png-phone-icon-orange-png.png" alt="" class="small mx-3">
+                        0307-7875533
+                    </li>
+                    <li>
+                        <img src="./images/207-2072661_jpg-free-stock-location-clipart-office-address-orange-removebg-preview.png" alt="" class="small mx-3">
+                        <span>Sadaqat Assets, Kirian Wala, DHA <br class="br"> Phase 5, M-Block</span>
+                    </li>
                 </ul>
             </div>
+            
+            
+            
+            
         </div>
 
         <div class="footer-bottom">
-            © 2025 MyWebsite | All Rights Reserved
+            © NextIn | All Rights Reserved
         </div>
     </footer>
 </div>
@@ -523,6 +552,11 @@
 		}
 	}, 1000);
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
 
 
 </body>

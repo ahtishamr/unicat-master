@@ -481,6 +481,7 @@ section
 	-ms-transition: all 200ms ease;
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
+	
 }
 .header.scrolled
 {
@@ -570,10 +571,12 @@ section
 	-ms-transition: all 200ms ease;
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
+	
 }
 .logo img
 {
-	max-width: 100%;
+	max-width: 100%; 
+	z-index: 999;
 }
 .logo_text
 {
