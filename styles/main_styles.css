@@ -215,12 +215,19 @@
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
+html{
+	cursor;
+	cursor: url(../icon/arrow.png) -10 -10 auto;
+}
+
 body
 {
 	font-family: "Baloo Thambi 2", cursive !important;
 	font-size: 14px;
 	font-weight: 400;
 	background-color: var(--background);
+	cursor: url();
+	
 }
 /* shadow */
 .shadow {
