@@ -1752,3 +1752,60 @@ background-repeat: no-repeat;
 	width: 30px;
 	
 }
+.mobile_nav {
+	display: none;
+	position: absolute;
+	top: 60px;
+	right: 0;
+	width: 100%;
+	
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #ffb600;
+	color:white ;
+}
+.hamburger {
+	position: absolute;
+	right: 15px;
+	top: 27px;
+}
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; /* Thoda spacing add kiya */
+}
+
+.logo_container {
+    flex-shrink: 0;
+}
+
+
+
+.hamburger {
+    
+} 
+@media screen and (max-width:700px) {
+	.mobile_nav{
+		top: 92px;
+		right: 15px;
+
+
+	}
+	.main_nav_container {
+		display: flex;
+		gap: 10px; /* Buttons ke beech spacing */
+	}
+	
+	.main_nav_container button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 8px 16px;
+		flex-direction: column;
+		width: 100%;
+	}
+	
+}

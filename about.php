@@ -12,6 +12,8 @@
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
@@ -20,43 +22,9 @@
 </head>
 <body>
 
-    <header class="header mt-3 " >
-
-		<!-- Header Content -->
-		<div class="header_container">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<div class="header_content d-flex flex-row align-items-center justify-content-start">
-							<div class="logo_container">
-								<a href="#">
-									<div class="logo_text emboss">Next<span>In</span></div>
-								</a>
-							</div>
-							<nav class="main_nav_contaner ml-auto">
-								<div class="container">
-									<button class="btn btn-success success show-tooltip"><a href="./index.html">Home</a></button>
-									<button class="btn btn-info info"><a href="./courses.html">Courses</a></button>
-									<button class="btn btn-warning text-white warning"><a href="./doctor.html">About</a></button>
-									<button class="btn btn-danger danger"><a href="./doctor.html">Contact us</a></button>
-									</div>
-								
-								<!-- Hamburger -->
-
-						
-								<!-- <div class="shopping_cart contact-btn"><i class="fa fa-phone" aria-hidden="true"></i></div> -->
-
-								<div class="hamburger menu_mm">
-									<i class="fa fa-bars menu_mm" aria-hidden="true"></i>
-								</div>
-							</nav>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>		
-	</header>
+<?php
+		@include('./layout/header.php');
+	?>
 
     <div class="container about-us">
         <header class="my-4" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
@@ -151,74 +119,9 @@
 
 
 </div>
-<footer class="footer">
-    <div class="logo">
-        <img src="./images/logo1.png" alt="">
-    </div>
-
-    <div class="footer-container">
-        <!-- Logo & Social Media -->
-        <div class="footer-column" data-aos="fade-right">
-            <p>"Code your dreams into reality—every bug you fix is a step closer to success! Keep learning, keep building!" 🚀💻</p>
-            <div class="social-icons d-flex align-items-center">
-                <a href="#" class="social-link"><img src="./images/fb-removebg-preview (1).png" alt="" class="social-img"></a>
-                <a href="#" class="social-link"><img src="./images/what.png" alt="" class="social-img"></a>
-                <a href="#" class="social-link"><img src="./images/linked.png" alt="" class="social-img"></a>
-                <a href="#" class="social-link"><img src="./images/git.png" alt="" class="social-img"></a>
-            </div>
-        </div>
-        
-
-        <!-- Explore -->
-        <div class="footer-column" data-aos="fade-up">
-            <h3>Explore</h3>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </div>
-        
-        <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
-            <h3>Services</h3>
-            <ul>
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">SEO</a></li>
-                <li><a href="#">App design</a></li>
-                <li><a href="#">Marketing</a></li>
-            </ul>
-        </div>
-        
-
-        <!-- Contact -->
-        <div class="footer-column" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
-            <h3>Contact</h3>
-            <ul data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
-                <li>
-                    <img src="./images/email-removebg-preview.png" alt="" class="small mx-3">
-                    bilalbaqar5717@gmail.com
-                </li>
-                <li>
-                    <img src="./images/203-2038341_phone-png-phone-icon-orange-png.png" alt="" class="small mx-3">
-                    0307-7875533
-                </li>
-                <li>
-                    <img src="./images/207-2072661_jpg-free-stock-location-clipart-office-address-orange-removebg-preview.png" alt="" class="small mx-3">
-                    <span>Sadaqat Assets, Kirian Wala, DHA <br class="br"> Phase 5, M-Block</span>
-                </li>
-            </ul>
-        </div>
-        
-        
-        
-        
-    </div>
-
-    <div class="footer-bottom">
-        © NextIn | All Rights Reserved
-    </div>
-</footer>
+<?php
+		@include('./layout/footer.php');
+	?>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>

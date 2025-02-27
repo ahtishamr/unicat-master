@@ -11,6 +11,8 @@
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
@@ -23,44 +25,11 @@
 		<div class="loader"></div>
 	</div>
 	<!-- Header -->
+	
 
-	<header class="header mt-3 " >
-
-		<!-- Header Content -->
-		<div class="header_container">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<div class="header_content d-flex flex-row align-items-center justify-content-start">
-							<div class="logo_container">
-								<a href="#">
-									<div class="logo_text emboss">Next<span>In</span></div>
-								</a>
-							</div>
-							<nav class="main_nav_contaner ml-auto">
-								<div class="container">
-									<button class="btn btn-success success show-tooltip"><a href=""></a>Home</button>
-									<button class="btn btn-info info"><a href="./courses.html">Courses</a></button>
-									<button class="btn btn-warning text-white warning"><a href="./doctor.html">About</a></button>
-									<button class="btn btn-danger danger"><a href="./doctor.html">Contact us</a></button>
-									</div>
-								
-								<!-- Hamburger -->
-
-						
-								<!-- <div class="shopping_cart contact-btn"><i class="fa fa-phone" aria-hidden="true"></i></div> -->
-
-								<div class="hamburger menu_mm">
-									<i class="fa fa-bars menu_mm" aria-hidden="true"></i>
-								</div>
-							</nav>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>		
-	</header>
+	<?php
+		@include('./layout/header.php');
+	?>
 <!-- menu -->
 <div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
 	<div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
@@ -156,117 +125,10 @@
 <div class="twelve d-flex justify-content-center ">
 	<h1 class=" m-5 emboss ">Popular Courses</h1>
 </div>
-<div class="card-wrapper">
+<?php
+@include("./component/topCourses.php");
 
-    <!-- Frontend Development Card -->
-    <div class="card card-course" data-aos="fade-up" data-aos-duration="1000">
-        <a href="#">
-            <div class="card__image" data-aos="zoom-in" data-aos-delay="200">
-                <img src="./images/frontend.jpg" alt="Frontend Development Course">
-            </div>
-            <div class="card__details" data-aos="fade-right" data-aos-delay="300">
-                <h4 class="emboss">Frontend Development</h4>
-                <div class="details__description">
-                    Learn the latest frontend technologies such as HTML, CSS, JavaScript, and more.
-                </div>
-                <div class="details__bottom">
-                    <div class="details__price">
-                        <h4 class="emboss">PKR30000</h4>  
-                        <span class="price--old">PKR45000</span>
-                    </div>
-                </div>
-            </div>
-        </a>
-        <div class="card__options" data-aos="fade-left" data-aos-delay="400">
-            <div class="options__wishlist">
-                <i class="icon fa fa-heart"></i>
-            </div>
-        </div>
-        <button class="neon-button" data-aos="zoom-in" data-aos-delay="500">Enroll Now</button>
-    </div>
-
-    <!-- Backend Development Card -->
-    <div class="card card-course" data-aos="fade-up" data-aos-duration="1000">
-        <a href="#">
-            <div class="card__image" data-aos="zoom-in" data-aos-delay="200">
-                <img src="./images/php.jpg" alt="Backend Development Course">
-            </div>
-            <div class="card__details" data-aos="fade-right" data-aos-delay="300">
-                <h4 class="emboss">Backend Development</h4>
-                <div class="details__description">
-                    Master server-side technologies like PHP, MySQL, and API development.
-                </div>
-                <div class="details__bottom">
-                    <div class="details__price">
-                        <h4 class="emboss">PKR30000</h4>
-                        <span class="price--old">PKR45000</span>
-                    </div>
-                </div>
-            </div>
-        </a>
-        <div class="card__options" data-aos="fade-left" data-aos-delay="400">
-            <div class="options__wishlist">
-                <i class="icon fa fa-heart"></i>
-            </div>
-        </div>
-        <button class="neon-button" data-aos="zoom-in" data-aos-delay="500">Enroll Now</button>
-    </div>
-
-    <!-- Full Stack Development Card -->
-    <div class="card card-course" data-aos="fade-up" data-aos-duration="1000">
-        <a href="#">
-            <div class="card__image" data-aos="zoom-in" data-aos-delay="200">
-                <img src="./images/laravel2.jpg" alt="Full Stack Development Course">
-            </div>
-            <div class="card__details" data-aos="fade-right" data-aos-delay="300">
-                <h4 class="emboss">Full Stack Development</h4>
-                <div class="details__description">
-                    Become a Full Stack developer using React.js, Laravel, and other powerful tools.
-                </div>
-                <div class="details__bottom">
-                    <div class="details__price">
-                        <h4 class="emboss">PKR50000</h4>
-                        <span class="price--old">PKR60000</span>
-                    </div>
-                </div>
-            </div>
-        </a>
-        <div class="card__options" data-aos="fade-left" data-aos-delay="400">
-            <div class="options__wishlist">
-                <i class="icon fa fa-heart"></i>
-            </div>
-        </div>
-        <button class="neon-button" data-aos="zoom-in" data-aos-delay="500">Enroll Now</button>
-    </div>
-
-    <!-- WordPress Development Card -->
-    <div class="card card-course" data-aos="fade-up" data-aos-duration="1000">
-        <a href="#">
-            <div class="card__image" data-aos="zoom-in" data-aos-delay="200">
-                <img src="https://kinsta.com/wp-content/uploads/2018/01/wordpress-lms-plugins-1.png" alt="WordPress Development Course">
-            </div>
-            <div class="card__details" data-aos="fade-right" data-aos-delay="300">
-                <h4 class="emboss">WordPress Development</h4>
-                <div class="details__description">
-                    Learn to build beautiful websites and blogs using WordPress.
-                </div>
-                <div class="details__bottom">
-                    <div class="details__price">
-                        <span class="price">PKR 15000</span>
-                        <span class="price--old">PKR 20000</span>
-                    </div>
-                </div>
-            </div>
-        </a>
-        <div class="card__options" data-aos="fade-left" data-aos-delay="400">
-            <div class="options__wishlist">
-                <i class="icon fa fa-heart"></i>
-            </div>
-        </div>
-        <button class="neon-button" data-aos="zoom-in" data-aos-delay="500">Enroll Now</button>
-    </div>
-
-</div>
+?>
 
   
 <br><br>
@@ -428,74 +290,9 @@
 	
 	<!-- Footer -->
 
-	<footer class="footer">
-        <div class="logo">
-			<img src="./images/logo1.png" alt="">
-		</div>
-
-        <div class="footer-container">
-            <!-- Logo & Social Media -->
-            <div class="footer-column" data-aos="fade-right">
-                <p>"Code your dreams into reality—every bug you fix is a step closer to success! Keep learning, keep building!" 🚀💻</p>
-                <div class="social-icons d-flex align-items-center">
-                    <a href="#" class="social-link"><img src="./images/fb-removebg-preview (1).png" alt="" class="social-img"></a>
-                    <a href="#" class="social-link"><img src="./images/what.png" alt="" class="social-img"></a>
-                    <a href="#" class="social-link"><img src="./images/linked.png" alt="" class="social-img"></a>
-                    <a href="#" class="social-link"><img src="./images/git.png" alt="" class="social-img"></a>
-                </div>
-            </div>
-            
-
-            <!-- Explore -->
-            <div class="footer-column" data-aos="fade-up">
-                <h3>Explore</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
-                <h3>Services</h3>
-                <ul>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">SEO</a></li>
-                    <li><a href="#">App design</a></li>
-                    <li><a href="#">Marketing</a></li>
-                </ul>
-            </div>
-            
-
-            <!-- Contact -->
-            <div class="footer-column" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
-                <h3>Contact</h3>
-                <ul data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
-                    <li>
-                        <img src="./images/email-removebg-preview.png" alt="" class="small mx-3">
-                        bilalbaqar5717@gmail.com
-                    </li>
-                    <li>
-                        <img src="./images/203-2038341_phone-png-phone-icon-orange-png.png" alt="" class="small mx-3">
-                        0307-7875533
-                    </li>
-                    <li>
-                        <img src="./images/207-2072661_jpg-free-stock-location-clipart-office-address-orange-removebg-preview.png" alt="" class="small mx-3">
-                        <span>Sadaqat Assets, Kirian Wala, DHA <br class="br"> Phase 5, M-Block</span>
-                    </li>
-                </ul>
-            </div>
-            
-            
-            
-            
-        </div>
-
-        <div class="footer-bottom">
-            © NextIn | All Rights Reserved
-        </div>
-    </footer>
+	<?php
+		@include('./layout/footer.php');
+	?>
 </div>
 
 <script src="js/jquery-3.2.1.min.js"></script>
